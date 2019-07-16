@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel = "stylesheet" href = "style.css" type = "text/css"/>
+      <link rel="shortcut icon" href="favicon.ico">
+      <title>
+        Noted.
+      </title>
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="main.html">
+              <img src="home.png" width="50" height="50" alt="Shortcut to homepage."> <!-- Source: https://www.flaticon.com/free-icon/home_149042#term=home&page=1&position=27 -->
+            </a>
+            <a href="settings.html">
+              <img src="settings.png" width="50" height="50" alt="Shortcut to settings page"> <!-- Source: https://www.flaticon.com/free-icon/settings_321777#term=settings&page=2&position=6 -->
+            </a>
+        </div>
+        <div class="heading">
+          <div class = "logo">
+            <a href="main.html">
+              <img src ="checklist.png" width="130" alt="Noted Logo"> <!--Source https://www.flaticon.com/free-icon/checklist_262825#term=notepad%20pencil&page=1&position=29 -->
+            </a>
+          </div>
+          <div class = "title">
+            Noted.
+          </div>
+          <div class="subtitle">
+            A place for all your quick notes. <br>
+          </div>
+        </div>
+        <div class="form">
+          <div id="notetitle">
+            <input type="text" id="title" name="Note Title" placeholder="Your Note Title...">
+          </div>
+          <div id="notecontent">
+            <textarea id="content" placeholder="       Your Note Here..."></textarea>
+          </div>
+          <div class="submit">
+            <button onclick="postnote()">Save Note</button>
+          </div>
+        </div>
+        <div class="notearea">
+          <div class="savednote" id="savednote">
+          </div>
+        </div>
+      <script>
+        function postnote()
+        {
+          if (document.getElementById("title").value == "" || document.getElementById("content").value == "")
+          {
+            return false // do not make a note if there is no content.
+          }
+          var wordCount = 0;
+          content = document.getElementById("content").value;
+          wordCount = content.split(' ').length;
+          var saved = document.getElementById('savednote').innerHTML;
+          var note = ("<div class='printednote'><div>" + "<b>Title:</b> <br>" + document.getElementById("title").value + "<br>" + "<b><br>Content:</b> <br>" +  document.getElementById("content").value +
+                      "<div class='countarea'><br>  Word Count = " + wordCount + "</div></div></div>" + saved);
+          document.getElementById('savednote').innerHTML = note;
+        }
+      </script>
+    </body>
+</html>

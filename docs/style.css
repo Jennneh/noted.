@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Slabo+27px&display=swap');
+
+body
+{
+  font-family:        'Slabo 27px', serif;
+  font-size:          32px;
+  background-color:   #D6EAF8;
+}
+.sidebar
+{
+  display:            flex;
+  flex-flow:          column;
+  background-color:   #5DADE2;
+  width:              70px;
+  height:             100%;
+  float:              right;
+  position:           fixed;
+  z-index:            1;
+  top:                0;
+  right:              0;
+  overflow-x:         hidden;
+  padding-top:        20px;
+}
+.sidebar img
+{
+  display:            block;
+  padding-top:        5px;
+  padding-bottom:     20px;
+  margin:             auto;
+}
+.sidebar img:hover
+{
+  opacity:            .5;
+}
+.heading
+{
+  display:            flex;
+  background-color:   #D6EAF8;
+  color:              black;
+  font-family:        'Barriecito';
+  font-size:          128px;
+  text-shadow:        4px 4px 4px #1B4F72;
+  margin: auto
+}
+.title
+{
+  float:              right;
+  margin-right:       1100px;
+}
+.logo
+{
+  float:              left;
+  margin-left:        52px;
+  margin-top:         20px;
+}
+.subtitle
+{
+  position:           absolute;
+  z-index:            2;
+  font-size:          20px;
+  margin-top:         130px;
+  margin-left:        170px;
+  display: flex;
+}
+.form
+{
+  border-radius:      7.5px;
+  background-color:   #5DADE2;
+  max-width:          90%;
+  padding:            20px;
+  margin:             50px 120px 50px 50px;
+  font-family:        'Slabo 27px', serif;
+}
+input[type=text]
+{
+  width:              100%;
+  padding:            12px 20px;
+  margin:             8px 0;
+  display:            inline-block;
+  border:             1px solid #ccc;
+  border-radius:      7.5px;
+  box-sizing:         border-box;
+}
+textarea
+{
+  display:            flex;
+  width:              99.5%;
+  margin-right:       2px;
+  max-width:          99.5%;
+  font-family:        'Slabo 27px', serif;
+  font-size:          14px;
+  padding-top:        15px;
+  border-radius:      7.5px;
+  min-width:          99.5%
+}
+button
+{
+  width:              100%;
+  background-color:   #D6EAF8;
+  padding:            10px 20px;
+  margin:             8px 0px;
+  border:             none;
+  border-radius:      7.5px;
+  cursor:             pointer;
+  font-size:          25px;
+  font-family:        'Slabo 27px', serif;
+}
+button:hover
+{
+  background-color:   #EBF5FB;
+}
+.printednote
+{
+  word-wrap:          break-word;
+  border-radius:      5px;
+  background-color:   #5DADE2;
+  padding-top:        25px;
+  padding-left:       30px;
+  padding-right:      30px;
+  margin:             10px 120px 5px 50px;
+  font-family:        'Slabo 27px', serif;
+}
+.countarea
+{
+font-size:            20px;
+padding-bottom:       25px;
+}
+.settingsnav
+{
+  margin-right: 50px;
+}
+ul
+{
+  list-style-type: none;
+  margin-right: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 400px;
+  background-color: white;
+  float: left;
+
+
+}
+.settingsnav
+{
+  float: left;
+  margin-left:        52px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  background-color: #D6EAF8;
+}
+li a:hover
+{
+  opacity: .5;
+}
+
+.settingsoptions
+{
+  z-index: 3;
+  margin-top: 32px;
+  margin-left: 320px;
+  margin-bottom: 50px;
+  margin-right: 200px;
+  position: absolute;
+  display: flex;
+	padding: 2%;
+	width: 69%;
+	background-color: white;
+}
