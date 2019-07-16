@@ -23,8 +23,11 @@ body
 }
 .sidebar img
 {
-  display:            block;
+  z-index: 5;
+  position: absolute;
+  display:            flex;
   padding-top:        5px;
+  padding-left:       10px;
   padding-bottom:     20px;
   margin:             auto;
 }
